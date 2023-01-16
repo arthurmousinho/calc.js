@@ -1,0 +1,99 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+
+main {
+    border: 2px solid #29292E; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 2px solid #29292E; 
+    border-radius: 5px;
+    height: 80px;
+}
+
+#screen p {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 0.5rem 1rem 1rem 1rem;
+}
+
+#buttons-container button {
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #29292E;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+}
+
+#buttons-container button:hover {
+    background-color: #3b3b42;
+}
+
+#buttons-container button[class='operator'] {
+    background-color: #EB8A1D;
+}
+
+#buttons-container button[class='operator']:hover {
+    background-color: #f9a545;
+}
+
+.equal {
+    background-color: #3b3b42;
+}
+
+@media (max-width: 470px) {
+
+    body {
+        height: 80vh;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    #buttons-container {
+        margin: 2px;
+    }
+
+    #buttons-container button {
+        width: 20vw;
+        border-radius: 5px;
+        background-color: #29292E;
+        color: white;
+        font-size: 20px;
+    }
+
+    #screen p {
+        font-size: 2rem;
+    }
+}
